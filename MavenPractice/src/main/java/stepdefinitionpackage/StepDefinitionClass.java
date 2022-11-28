@@ -1,13 +1,15 @@
 package stepdefinitionpackage;
 
+import java.util.Map;
+
 import io.cucumber.java.en.*;
 import modulepackage.ModuleClass;
 
 public class StepDefinitionClass {
 
 	@When("^Browser Initiation$")
-	public void Browserinitiation() {
-		ModuleClass.browserInitiation();
+	public void Browserinitiation(Map<String, String> Data) {
+		ModuleClass.browserInitiation(Data.get("URL"));
 	}
 	
 	@And("^Login to Gmail account$")

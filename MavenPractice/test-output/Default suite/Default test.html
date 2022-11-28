@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 16 17:07:12 BST 2022</td>
+<td>Started on:</td><td>Mon Nov 28 20:03:11 GMT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13746 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5818 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,35 +76,125 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testpackage.GmailTest.runScenario()'><b>runScenario</b><br>Test class: testpackage.GmailTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to Gmail account_compose email_logout", "Sample_Feature"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id=&apos;view_container&apos;]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div/div/ul/li[2]/div
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+<td title='testpackage.GmailTest.runScenario()'><b>runScenario</b><br>Test class: testpackage.GmailTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to Gmail account_compose email_logout", "Gmail_Feature"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 107.0.5304.107 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;TEJASWAROOP&apos;, ip: &apos;192.168.1.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at modulepackage.ModuleClass.gmailAccountLogin(ModuleClass.java:23)
-	at stepdefinitionpackage.StepDefinitionClass.GmailAccountlogin(StepDefinitionClass.java:15)
-	at ✽.Login to Gmail account(file:///C:/Users/Teja%20Swaroop/eclipse-workspace/MavenPractice/Feature/Sample.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace887230059", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace887230059'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id=&apos;view_container&apos;]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div/div/ul/li[2]/div
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00F378B3+2193587]
+	Ordinal0 [0x00ED0681+1771137]
+	Ordinal0 [0x00DE41A8+803240]
+	Ordinal0 [0x00E05CC3+941251]
+	Ordinal0 [0x00E013EF+922607]
+	Ordinal0 [0x00DFEBC1+912321]
+	Ordinal0 [0x00E323B0+1123248]
+	Ordinal0 [0x00E3200A+1122314]
+	Ordinal0 [0x00E2D5C6+1103302]
+	Ordinal0 [0x00E077E0+948192]
+	Ordinal0 [0x00E086E6+952038]
+	GetHandleVerifier [0x011E0CB2+2738370]
+	GetHandleVerifier [0x011D21B8+2678216]
+	GetHandleVerifier [0x00FC17AA+512954]
+	GetHandleVerifier [0x00FC0856+509030]
+	Ordinal0 [0x00ED743B+1799227]
+	Ordinal0 [0x00EDBB68+1817448]
+	Ordinal0 [0x00EDBC55+1817685]
+	Ordinal0 [0x00EE5230+1856048]
+	BaseThreadInitThunk [0x762E6359+25]
+	RtlGetAppContainerNamedObjectPath [0x76FF87A4+228]
+	RtlGetAppContainerNamedObjectPath [0x76FF8774+180]
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at modulepackage.ModuleClass.browserInitiation(ModuleClass.java:15)
+	at stepdefinitionpackage.StepDefinitionClass.Browserinitiation(StepDefinitionClass.java:12)
+	at ✽.Browser Initiation(file:///C:/Users/Teja%20Swaroop/git/SampleProject/MavenPractice/Feature/Gmail.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace834842620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace834842620'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 107.0.5304.107 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;TEJASWAROOP&apos;, ip: &apos;192.168.1.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at modulepackage.ModuleClass.gmailAccountLogin(ModuleClass.java:23)
-	at stepdefinitionpackage.StepDefinitionClass.GmailAccountlogin(StepDefinitionClass.java:15)
-	at ✽.Login to Gmail account(file:///C:/Users/Teja%20Swaroop/eclipse-workspace/MavenPractice/Feature/Sample.feature:6)
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00F378B3+2193587]
+	Ordinal0 [0x00ED0681+1771137]
+	Ordinal0 [0x00DE41A8+803240]
+	Ordinal0 [0x00E05CC3+941251]
+	Ordinal0 [0x00E013EF+922607]
+	Ordinal0 [0x00DFEBC1+912321]
+	Ordinal0 [0x00E323B0+1123248]
+	Ordinal0 [0x00E3200A+1122314]
+	Ordinal0 [0x00E2D5C6+1103302]
+	Ordinal0 [0x00E077E0+948192]
+	Ordinal0 [0x00E086E6+952038]
+	GetHandleVerifier [0x011E0CB2+2738370]
+	GetHandleVerifier [0x011D21B8+2678216]
+	GetHandleVerifier [0x00FC17AA+512954]
+	GetHandleVerifier [0x00FC0856+509030]
+	Ordinal0 [0x00ED743B+1799227]
+	Ordinal0 [0x00EDBB68+1817448]
+	Ordinal0 [0x00EDBC55+1817685]
+	Ordinal0 [0x00EE5230+1856048]
+	BaseThreadInitThunk [0x762E6359+25]
+	RtlGetAppContainerNamedObjectPath [0x76FF87A4+228]
+	RtlGetAppContainerNamedObjectPath [0x76FF8774+180]
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at modulepackage.ModuleClass.browserInitiation(ModuleClass.java:15)
+	at stepdefinitionpackage.StepDefinitionClass.Browserinitiation(StepDefinitionClass.java:12)
+	at ✽.Browser Initiation(file:///C:/Users/Teja%20Swaroop/git/SampleProject/MavenPractice/Feature/Gmail.feature:5)
 </pre></div></td>
-<td>13</td>
-<td>testpackage.GmailTest@7530ad9c</td></tr>
+<td>4</td>
+<td>testpackage.GmailTest@4e50c791</td></tr>
 </table><p>
 </body>
 </html>

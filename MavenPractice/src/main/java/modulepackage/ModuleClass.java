@@ -10,11 +10,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ModuleClass {
 	public static WebDriver driver;
-	public static void browserInitiation() {
+	public static void browserInitiation(String URL) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Teja Swaroop\\eclipse-workspace\\MavenPractice\\src\\main\\resources\\Drivers\\chromedriver.exe");;
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
+		driver.get(URL);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	
@@ -52,4 +52,9 @@ public class ModuleClass {
     	driver.findElement(By.xpath("//*[@id=\'yDmH0d\']/c-wiz/div/div/div/div/div[2]/div/div/div[3]/span/a/div")).click();
 		driver.quit();
 	}
+    
+    public static void demoSiteWebElementsChecking() {
+    	System.out.println(driver.getTitle());
+    	System.out.println(driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/header/div/div[2]/div[1]/a/div")).getText());
+    }
 }

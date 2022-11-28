@@ -6,8 +6,8 @@
       <class name="testpackage.GmailTest">
         <methods>
           <include name="setUpClass"/>
-          <include name="tearDownClass"/>
           <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
           <include name="cleanUp"/>
           <include name="init"/>
         </methods>
