@@ -5,8 +5,9 @@ import org.testng.annotations.BeforeClass;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features="Feature/Gmail.feature", glue="stepdefinitionpackage", tags="@Sample1", plugin="html:target/test-report")
-public class GmailTest extends AbstractTestNGCucumberTests {
+@CucumberOptions(features="Feature/DemoSite.feature", glue="stepdefinitionpackage", tags= "@Sample1", plugin="html:target/test-report.html")
+
+public class DemoSiteTest extends AbstractTestNGCucumberTests {
 
 	@BeforeClass
 	public void init() {

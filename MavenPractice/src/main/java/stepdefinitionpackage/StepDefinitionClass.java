@@ -26,4 +26,25 @@ public class StepDefinitionClass {
 	public void LogoutGmailaccount() {
 		ModuleClass.logoutGmailAccount();
 	}
+	
+	@When("user tests Checkboxes functionality")
+	public void user_tests_checkboxes_functionality() {
+		ModuleClass.checkboxesFunctionality();
+	}
+	@When("user tests Mousehover functionality")
+	public void user_tests_mousehover_functionality() {
+		ModuleClass.mousehoverFunctionality();
+	}
+	@When("user tests Dropdown functionality")
+	public void user_tests_dropdown_functionality() {
+		ModuleClass.dropdownFunctionality();
+	}
+	@When("user tests Frames functionality")
+	public void user_tests_frames_functionality() {
+		ModuleClass.framesFunctionality();
+	}
+	@Then("user closes the browser")
+	public void user_closes_the_browser() {
+		ModuleClass.closeBrowser();
+	}
 }
