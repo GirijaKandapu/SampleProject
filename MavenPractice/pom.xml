@@ -3,15 +3,16 @@
 	<groupId>Package1</groupId>
 	<artifactId>MavenPractice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<!-- Defining Properties here -->
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-	
+
 	<!-- Defining Dependencies here -->
 	<dependencies>
+
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -42,34 +43,37 @@
 			<artifactId>cucumber-testng</artifactId>
 			<version>7.6.0</version>
 		</dependency>
+		
 	</dependencies>
-	
+
 	<!-- Defining Plugins here -->
+	<!--
 	<build>
-     <plugins>
-     <plugin>
-            <groupId>net.masterthought</groupId>
-            <artifactId>maven-cucumber-reporting</artifactId>
-            <version>${maven-cucumber-reporting.version}</version>
-            <executions>
-                <execution>
-                    <id>generate-cucumber-reports</id>
-                    <phase>test</phase>
-                    <goals>
-                        <goal>generate</goal>
-                    </goals>
-                    <configuration>
-                        <jsonFiles>
-                            <param>**/*.json</param>
-                        </jsonFiles>
-                        <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
-                        <inputDirectory>${project.build.directory}/cucumber</inputDirectory>
-                        <checkBuildResult>false</checkBuildResult>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
-     </plugins>
-</build>
-	
+		<plugins>
+			<plugin>
+				<groupId>net.masterthought</groupId>
+				<artifactId>maven-cucumber-reporting</artifactId>
+				<version>${maven-cucumber-reporting.version}</version>
+				<executions>
+					<execution>
+						<id>generate-cucumber-reports</id>
+						<phase>test</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<jsonFiles>
+								<param>**/*.json</param>
+							</jsonFiles>
+							<outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
+							<inputDirectory>${project.build.directory}/cucumber</inputDirectory>
+							<checkBuildResult>false</checkBuildResult>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	-->
+
 </project>
