@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeClass;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features="Feature/DemoSite.feature", glue="stepdefinitionpackage", tags= "@Sample1", plugin="html:target/test-report.html")
+@CucumberOptions(features="Feature/DemoSite.feature", glue="stepdefinitionpackage", tags= "@Sample1", plugin= {"html:target/test-report.html", "json:target/cucumber/cucumber.json"} )
 
 public class DemoSiteTest extends AbstractTestNGCucumberTests {
 
